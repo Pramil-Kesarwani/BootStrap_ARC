@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <link
+      rel="stylesheet"
+      href="style.css
+    "
+    />
+  </head>
+  <body>
+
+    <!-- bootstrap pagination --> <hr>
+    <div class="container mt-4">
+      <nav aria-label="Page navigation example for screen reader">
+        <ul class="pagination">
+          <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+          <li class="page-item"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="...">
+        <ul class="pagination pagination-lg">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- bootstrap placeholders --> <hr>
+    <div class="container d-flex mt-4">
+      <div class="card m-3" style="width: 18rem;">
+        <img src="https://via.placeholder.com/25x25" class="card-img-top" style="height:125px;" alt="...">
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card w-25" aria-hidden="true">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder placeholder-wave col-6 text-dark">hello there</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap nav & tabs --> <hr>
+    <div class="container mt-4">
+    <div class="card col-md-10">
+       <div class="card-content p-3 bg-info bg-opacity-50">
+         <ul class="nav">
+           <li class="nav-item">
+             <a href="#" class="nav-link">Link1</a>
+           </li>
+           <li class="nav-item">
+             <a href="#" class="nav-link">Link2</a>
+           </li>
+           <li class="nav-item">
+             <a href="#" class="nav-link" title="link3">Link3</a>
+           </li>
+         </ul>
+
+         <ul class="nav nav-pills nav-fill bg-dark rounded-3 pd-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+
+         <ul class="nav nav-pills flex-row justify-content-between bg-dark rounded-3 pd-2 mt-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+
+         <ul class="nav nav-pills flex-column bg-dark rounded-3 pd-2 mt-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+       </div>
+    </div>
+    </div>
+
+
+    <!-- bootstrap accordian --> <hr>
+    <div class="container mt-4">
+     <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap breadcrumb --> <hr>
+    <div class="container mt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="">Home</a></li>
+          <li class="breadcrumb-item"><a href="">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <nav style="--bs-breadcrumb-divider:'>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="">Home</a></li>
+          <li class="breadcrumb-item"><a href="">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- bootstrap carousal --> <hr>
+    <div class="container mt-4">
+      <h1 class="display-4 fw-light text-center">carousal</h1>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://via.placeholder.com/350x150" class="d-block w-100 rounded-5" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/350x150" class="d-block w-100 rounded-5" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/350x150" class="d-block w-100 rounded-5" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- bootstrap range --> <hr>
+    <div class="container mt-4">
+      <label for="range" class="form-lable">Example range</label>
+      <input type="range" class="form-range" min="0" max="10" step="1" value="1">
+    </div>
+
+    <!-- bootstrap figure --> <hr>
+    <div class="container mt-4">
+      <figure class="figure">
+        <img class="figure-img img-fluid rounded-3" src="https://via.placeholder.com/250x150" alt="">
+        <figcaption class="figure-caption text-start">
+          A photo of 250x150 px.
+        </figcaption>
+      </figure>
+    </div>
+
+
+    <!-- bootstrap forms --> <hr>
+    <div class="container p-5 mt-4 border border-3 border-dark rounded-3 border-opacity-50 bg-secondary" style="--bs-bg-opacity:0.5;">
+      <h3 class="pb-4">Add inspection form</h3>
+      <form action="">
+        <div>
+          <lable for="title" class="form-lable fs-5 fw-semibold">Inspection Title</lable>
+          <input id="title" type="text" class="form-control">
+        </div>
+        <div>
+          <lable for="description" class="form-lable fs-5 fw-semibold">Description</lable>
+          <textarea id="description" type="text" class="form-control" rows="2" cols="2" maxlength="10"></textarea>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- bootstrap typography --> <hr>
+    <div class="container mt-4">
+      <h1 class="text-center text-danger text-decoration-underline">bootstrap typography</h1>
+      <p class="h1">Welcome to typography</p>
+      <p class="display-1">Welcome to typography</p>
+      <p class="text-muted h1"> hello this is muted text</p>
+
+      <div class="p-4 border border-primary border-opacity-50 rounded-5 border-5 bg-dark text-light lead">
+        this is a paragraph
+      </div>
+      <div class="blockquote">hello this is blockquote</div>
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="">hello there</a></li>
+        <li class="list-inline-item">hello there</li>
+        <li class="list-inline-item">hello there</li>
+      </ul>
+
+      <p class="h5 mt-4">hello there <abbr title="hey pramil">hi</abbr></p>
+
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>hello there i am pramil</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          pramil kesarwani <cite> <abbr title="just for fun">(khatarnak)</abbr></cite>
+        </figcaption>
+      </figure>
+
+      <div class="bg-info d-flex justify-content-between p-3">
+        <div class="d-flex justify-content-evenly">
+          <div class="me-4">1st block</div>
+          <div class="">2nd block</div>
+        </div>
+        <div class="">3rd block</div>
+      </div>
+
+    </div>
+
+
+    <!-- bootstrap toast --> <hr>
+    <div class="container mt-4">
+      <h3>bootstrap toasts</h3>
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+          <div id="liveToast" class="toast bg-info" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- bootstrap spinner --> <hr>
+    <div class="container mt-4 d-flex">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <div class="spinner-border text-success text-opacity-50">
+        <span>Pramil</span>
+      </div>
+
+      <div class="spinner-border text-danger" style="--bs-text-opacity:0.5">
+        <span class="visually-hidden">it will not show</span>
+      </div>
+
+      <div class="spinner-grow text-danger bg-info">
+        <span>hello pramil</span>
+      </div>
+
+      <div class="spinner-border text-success ms-auto"></div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" style="width: 25%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+    </div>
+
+    <!-- bootstrap progress bar --> <hr>
+    <div class="container mt-4">
+      <h3>progress bar</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
+    <!-- bootstrap popovers --> <hr>
+    <div class="container mt-4">
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" 
+      data-bs-title="Popover title" data-bs-placement="bottom"
+      data-bs-content="And here's some amazing content. It's very engaging. Right?">
+      Click to toggle popover
+    </button>
+    </div>
+
+
+    <!-- bootstrap tooltips --> <hr>
+    <div class="container mt-4">
+      <button type="button" class="btn btn-secondary"
+        data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This top tooltip is themed via CSS variables.">
+        Custom tooltip
+      </button>
+    </div>
+
+
+    <!-- bootstrap dropdown --> <hr>
+    <div class="container text-center mt-4">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+    </div>
+
+
+    <!-- bootstrap Forms --> <hr>
+    <div class="container text-center mt-5">
+      <h2>Form</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+        Launch form
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="input-label">firstname</label>
+                  <input id="username" type="text" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="input-label">Lastname</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <label class="input-label">Comments</label>
+                  <textarea class="form-control" name="" id="" cols="10" rows="2"></textarea>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="form-check">
+                      <label for="checkbox1" class="form-check-label">checkbox</label>
+                      <input type="checkbox" class="form-check-input" id="checkbox1"  checked disabled>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="checkbox2">
+                      <label for="checkbox2" class="form-check-label">checkbox</label>
+                    </div>
+                    <div class="form-check"> 
+                      <input type="radio" class="form-check-input" id="radio1" name="radioValue">
+                      <label for="radio1" class="form-check-label">radio</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="radioValue">
+                      <label for="radio2" class="form-check-label">radio</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="" class="form-label">Example range</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" value="0">
+                </div>
+                <div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- bootstrap collapse --> <hr>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-6 text-center">
+          <a href="#collapseExample" role="button" class="btn btn-primary" data-bs-toggle="collapse" >collapse button</a>
+          <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">click to collapse</button>
+        </div>
+
+        <div class="collapse mt-3" id="collapseExample">
+          <div class="card">
+            <div class="card-body">
+              hello this collapse card.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <!-- bootstrap modal --> <hr>
+    <div class="container mt-5">
+     <div class="row align-items-center text-center p-3">
+       <h1 class="col-md-4 text-primary">Bootstrap modal</h1>
+       <div class="col-md-8 text-end">
+         <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">click to open the modal</button>
+       </div>
+     </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap alert --> <hr>
+   <div class="mt-5">
+     <h4 class="alert alert-heading alert-primary container">hello</h4>
+     <a href="#" class="alert alert-link alert-secondary d-block container">hello</a>
+    
+     <div class="container alert alert-warning alert-dismissible fade show" role="alert">
+       <h4 class="alert-heading">Important notification</h4>
+       Dashboard data refreshed successfully!
+       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     </div>
+   </div>
+
+    <!--  Zylo site example  --> <hr>
+
+    <div class="container-fluid zylo">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fixed navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <main class="container">
+
+        <div class="row bg-secondary rounded-2 p-2 mb-3">
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Spending</h5>
+                <p class="card-text">10M</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Spending</h5>
+                <p class="card-text">10M</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Spending</h5>
+                <p class="card-text">10M</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Spending</h5>
+                <p class="card-text">10M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-light p-2 rounded">
+          <div class="row">
+            <div class="col-md-4"><h1>Applications </h1></div>
+            <div class="col-md-8 text-end">
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary">first</button>
+                <button type="button" class="btn btn-outline-success">Second</button>
+                <button type="button" class="btn btn-outline-danger">Third</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered table-hover table-secondary">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+              <th scope="col">Handle</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>@fat</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+
+
+    <!-- bootstrap button group --> <hr>
+    <div class="container mt-4">
+      <div class="row">
+        <button class="col-4 btn btn-primary">Add new contact</button>
+        <div class="col-8 text-end">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-secondary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap buttons --> <hr>
+    <div class="container mt-4">
+      <button class="btn btn-primary">Hello</button>
+      <button class="btn btn-outline-primary">Hello</button>
+      <button class="btn btn-primary disabled">Hello</button>
+      <button class="btn btn-secondary">Hello</button>
+    </div>
+
+
+    <!-- bootstrap tables --> <hr>
+    <div class="container mt-5">
+      <table class="table table-hover table-primary table-responsive table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- bootstrap lists --> <hr>
+    <div class="container-fluid mt-5">
+      <h3>Bootstrap list</h3>
+      <div class="row">
+        <div class="col-4">
+          <ul class="list-group">
+            <li class="list-group-item active">An item</li>
+            <li class="list-group-item disabled">A second item</li>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">link item</a>
+            </div>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item active">A second item</li>
+            <li class="list-group-item disabled">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item active">A third item</li>
+            <li class="list-group-item disabled ">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- bootstrap cards --> <hr>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/300x100" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/300x100" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/300x100" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/300x100" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- bootstrap navbar --> <hr>
+    <div class="container-fluid mt-4">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success btn-outline-info" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Apple.com example --> <hr>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-3">
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cosmos site Grid layout --> <hr>
+    <div class="container-fluid cosmos-navbar mt-5">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Hidden brand</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid cosmos">
+      <div class="row">
+        <div class="col-md-2 sidebar">
+          <ul class="list-group">
+            <li class="list-group-item">An active item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div class="col-md-10 main-content pt-4">
+          <h2>MARKETPLACE</h2>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ibm-site-example -->
+    <div class="container-fluid mt-5 ibm-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid ibm">
+      <div class="row">
+        <div class="col-2 sidebar">
+          <div class="list-group ">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">default list group</a>
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">primary list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">secondary list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">success list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">danger list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">warning list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">info list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">light list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">dark list group</a>
+          </div>
+        </div>
+        <div class="col-10 main-content p-4">
+          <h2>Inspection</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Responsive grid layouts -->
+    <div class="container-fluid pt-4 mt-5">
+      <h2>Welcome to Responsive grid model</h2>
+      <div class="row pt-4">
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-3 pb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- grids and layouts -->
+    <!-- <div class="container-fluid first">
+      <div class="header bg-primary">Header section of website.</div>
+      <div class="content bg-gradient">
+        <div class="row">
+          <div class="col-3 sidebar bg-danger">Left sidebar</div>
+          <div class="col-6 main-content bg-info">Main content</div>
+          <div class="col-3 sidebar bg-danger">right sidebar</div>
+        </div>
+      </div>
+      <div class="footer bg-success">Footer section of website.</div>
+      <style>
+      body {
+        background-color: whitesmoke;
+      }
+      .first{
+        margin-top: 300px;
+      }
+      .header {
+        height: 40px;
+      }
+      .content {
+        min-height: 500px;
+      }
+      .main-content {
+        min-height: 500px;
+      }
+      .footer {
+        height: 40px;
+      }
+    </style>
+    </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+    <!-- for toast -->
+    <script>
+      const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+      }
+    </script>
+
+  </body>
+</html>

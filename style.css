@@ -1,0 +1,43 @@
+
+
+/* zylo site example */
+.zylo {
+  min-height: 45rem;
+  padding-top: 4.5rem;
+}
+.zylo .navbar-dark{
+    background-color: darkblue!important     ;
+}
+
+/* apple.com example */
+
+
+/* cosmos site example */
+.cosmos{
+    background-color: gainsboro;
+}
+.cosmos .sidebar{
+    background-color: whitesmoke;
+    min-height: 500px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+
+}
+
+/* ibm site Example */
+.ibm .sidebar{
+    background-color: rgb(33 37 41);
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.ibm .sidebar .list-group-item{
+    background-color: transparent;
+    color: rgb(209, 203, 203);
+
+}
+.ibm .main-content{
+    background-color: rgb(220, 213, 213);
+}
+.ibm .table{
+    background-color: white;
+}
